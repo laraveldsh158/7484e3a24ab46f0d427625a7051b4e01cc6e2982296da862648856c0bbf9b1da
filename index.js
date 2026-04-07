@@ -1,6 +1,6 @@
 'use strict';
 const os = require('os');
-const APP_NAME = 'cache-proxy-99ffb3';
+const APP_NAME = 'cache-proxy-a9314a';
 const VERSION = '1.0.0';
 class UcacheUproxyHandler {
   constructor(options = {}) {
